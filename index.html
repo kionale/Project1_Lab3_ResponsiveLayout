@@ -22,74 +22,36 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+
 <body class="page page-home">
-  <header class="page__header">
+  <header class="header page__header">
     <div class="row">
       <h1>Metrolics</h1>
       <a href=""><img src=""></a>
+      <nav class="navbar-links">
+        <ul>
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="">
+            <li>Home</li>
+          </a>
+          <a href="">
+            <li>Pages</li>
+          </a>
+          <a href="">
+            <li>Blog</li>
+          </a>
+          <a href="">
+            <li>Portfolio</li>
+          </a>
+          <a href="">
+            <li>Home</li>
+          </a>
+        </ul>
+      </nav>
     </div>
-    <div class="row navbar-links">
-      <ul>
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>Pages</li>
-        </a>
-        <a href="">
-          <li>Blog</li>
-        </a>
-        <a href="">
-          <li>Portfolio</li>
-        </a>
-        <a href="">
-          <li>Home</li>
-        </a>
-      </ul>
-    </div>
-  </header>
 
-  <div class="page__slider">
-    <div class="row slides">
-      <img src="" alt="">
-    </div>
-  </div>
-
-
-
-
-
-<body class="page page-home">
-  <header class="page__header">
-    <div class="row">
-      <h1>Metrolics</h1>
-      <a href=""><img src=""></a>
-    </div>
-    <div class="row navbar-links">
-      <ul>
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>Pages</li>
-        </a>
-        <a href="">
-          <li>Blog</li>
-        </a>
-        <a href="">
-          <li>Portfolio</li>
-        </a>
-        <a href="">
-          <li>Home</li>
-        </a>
-      </ul>
-    </div>
   </header>
 
   <div class="page__slider">
@@ -100,11 +62,11 @@
   </div>
 
   <div class="page__intro">
-    <h1 class="page__heading">
+    <h1 class="header page__heading">
       Hey guys! This is the <span>Metrolics</span> theme.<br>
       It sports a responsive layout with a mobile layout.
     </h1>
-    <div class="page_subheading">
+    <div class="subheading page_subheading">
       <h3>
         Things That We do
       </h3>
@@ -146,9 +108,46 @@
       </div>
     </div>
   </div>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <nav></nav>
+
+  <!-- Main content starts here -->
+  <main class="page__main">
+    <section class="recent__work">
+      <header class="header post__header">What's up lately?</header>
+      <h4 class="subheading">Read up on our latest work</h4>
+      <div class="row m-col-2 l-col-3">
+        <div class="col">
+          <div>
+            <img src="" alt="">
+            <header class="header recent__work__title">Sample image post</header><br>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <img src="" alt="">
+            <header class="header recent__work__title">Sample image post</header><br>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <img src="" alt="">
+            <header class="header recent__work__title">Sample image post</header><br>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <img src="" alt="">
+            <header class="header recent__work__title">Sample image post</header><br>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
