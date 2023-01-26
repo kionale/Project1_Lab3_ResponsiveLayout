@@ -106,4 +106,7 @@ li {
   .m-col-2 {
     grid-template-columns: 1fr 1fr;
   }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
