@@ -1,0 +1,119 @@
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+div,
+main,
+section,
+header,
+footer {
+  outline: 1px solid #ccc;
+  min-height: 1rem;
+  padding: 1rem;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.col {
+  position: relative;
+  background-color: pink;
+}
+
+/* medium screens and up  */
+@media screen and (min-width: 40em) {
+  .row {
+    max-width: 70rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.top__row__latest {
+  display: flex;
+}
+
+.bottom__row__latest {
+  display: flex;
+}
