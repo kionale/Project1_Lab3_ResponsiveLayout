@@ -107,6 +107,7 @@ li {
   .m-col-2 {
     grid-template-columns: 1fr 1fr;
   }
+<<<<<<< HEAD
 
 
   .l-col-3 {
@@ -137,6 +138,11 @@ button {
 .examples {
   display: flex;
   justify-content: space-around;
+=======
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+>>>>>>> 8909e1c019b9cddbd376a64433fcd8000eb466dc
 }
 
 .sample__menu {
