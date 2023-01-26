@@ -84,7 +84,6 @@ li {
   margin: 0;
   list-style: none;
 }
-
 .row {
   display: grid;
   row-gap: 1rem;
@@ -107,79 +106,4 @@ li {
   .m-col-2 {
     grid-template-columns: 1fr 1fr;
   }
-
-
-  .l-col-3 {
-    grid-template-columns: (3, 1fr);
-  }
-
-
-}
-
-
-
-button {
-  height: 4rem;
-  width: 4rem;
-}
-
-.row_two {
-  display: grid;
-  row-gap: 1rem;
-}
-
-
-.col_two {
-  background-color: pink;
-  height: 6rem;
-}
-
-.examples {
-  display: flex;
-  justify-content: space-around;
-}
-
-.sample__menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.web__solution {
-  display: flex;
-}
-
-.web__author {
-  display: flex;
-}
-
-.recent__tweets {
-  display: flex;
-}
-
-
-.tab__information {
-  display: flex;
-}
-
-.sponsors {
-  display: flex;
-  justify-content: space-around;
-  height: 10rem;
-}
-
-.sponsors__icon {
-  background-color: lightgray;
-}
-
-.social__link {
-  display: flex;
-}
-
-.social__icon {
-  margin: 0.5rem;
-}
-
-.footer__extras {
-  display: flex;
-  flex-direction: row;
 }
