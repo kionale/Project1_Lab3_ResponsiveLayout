@@ -64,6 +64,23 @@ footer {
   padding: 1rem;
 }
 
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Layout */
 .page {
   margin: 0 auto;
   padding: 2rem;
@@ -95,6 +112,13 @@ li {
   background-color: pink;
 }
 
+/* Small view Only */
+@media screen and (max-width: 39.9375em) {
+  .s-hide {
+    display: none;
+  }
+}
+
 /* medium screens and up  */
 @media screen and (min-width: 40em) {
   .row {
@@ -107,16 +131,21 @@ li {
   .m-col-2 {
     grid-template-columns: 1fr 1fr;
   }
-
-
-  .l-col-3 {
-    grid-template-columns: (3, 1fr);
-  }
-
-
 }
 
+/* Medium Only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
 
+/* large screens and up */
+@media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 button {
   height: 4rem;
@@ -127,7 +156,6 @@ button {
   display: grid;
   row-gap: 1rem;
 }
-
 
 .col_two {
   background-color: pink;
@@ -155,7 +183,6 @@ button {
 .recent__tweets {
   display: flex;
 }
-
 
 .tab__information {
   display: flex;
