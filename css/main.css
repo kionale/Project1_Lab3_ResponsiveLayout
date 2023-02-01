@@ -61,7 +61,6 @@ header,
 footer {
   outline: 1px solid #ccc;
   min-height: 1rem;
-  padding: 1rem;
 }
 
 /* Typography */
@@ -117,13 +116,25 @@ li {
   grid-template-columns: 3.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.navbar-links{
+.navbar-links {
   display: flex;
   flex-direction: row;
-
 }
 
+.page__slider {
+  background-color: #ebebeb;
+}
 
+.slides {
+  display: grid;
+  place-content: center;
+}
+
+.page_slider_img {
+  width: 100rem;
+  height: 15rem;
+  object-fit: contain;
+}
 /* Small view Only */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
@@ -233,10 +244,6 @@ button {
   flex-direction: row;
 }
 
-img{
-width: 10rem;
-}
-
-.main__image{
-  width: 35rem;
+img {
+  width: 10rem;
 }
