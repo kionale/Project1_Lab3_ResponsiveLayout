@@ -119,6 +119,7 @@ li {
 .navbar-links {
   display: flex;
   flex-direction: row;
+
 }
 
 .page__slider {
