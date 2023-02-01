@@ -112,11 +112,16 @@ li {
   background-color: pink;
 }
 
-.navbar-links {
-  display: flex;
-  flex-direction: row;
+.navbar {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.navbar-links{
+  display: flex;
+  flex-direction: row;
+  
+}
 /* Small view Only */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
