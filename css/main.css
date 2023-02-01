@@ -151,6 +151,11 @@ li {
   padding: 2rem 1.5rem 0.25rem 1.5rem;
 }
 
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+}
+
 .nav-home {
   background-color: #25c389;
 }
