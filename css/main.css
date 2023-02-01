@@ -120,8 +120,10 @@ li {
 .navbar-links{
   display: flex;
   flex-direction: row;
-  
+
 }
+
+
 /* Small view Only */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
