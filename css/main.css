@@ -108,18 +108,56 @@ li {
 
 .col {
   position: relative;
-  background-color: pink;
 }
 
+.page__header {
+  width: 100rem;
+  height: 4.5rem;
+  display: grid;
+  place-content: center;
+}
 .navbar {
   display: grid;
-  grid-template-columns: 3.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  grid-template-columns: min-content;
+  padding: 0.5rem;
+  width: 100%;
+  min-width: 75rem;
+  border-radius: 0.5rem;
+  grid-template-areas: "title logo navbar";
+  grid-gap: 1rem;
+}
+
+.page-title {
+  grid-area: title;
+}
+
+.logo {
+  grid-area: logo;
+  place-self: center;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+.navbar-links > ul {
+  grid-area: navbar;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 1.5rem;
+  list-style: none;
+  place-self: center;
+  padding: 2rem 1.5rem 0.25rem 1.5rem;
 }
 
 .navbar-links {
   display: flex;
   flex-direction: row;
+}
 
+.nav-home {
+  background-color: #25c389;
 }
 
 .page__slider {
@@ -132,9 +170,22 @@ li {
 }
 
 .page_slider_img {
-  width: 100rem;
+  width: 120rem;
   height: 15rem;
   object-fit: contain;
+}
+
+.feature-services {
+  display: grid;
+  place-content: center;
+}
+.feature__servic__images {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+.feature__servic__title {
+  font-weight: bold;
 }
 /* Small view Only */
 @media screen and (max-width: 39.9375em) {
