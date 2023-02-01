@@ -165,8 +165,8 @@ li {
 }
 
 .page_slider_img {
-  width: 120rem;
-  height: 15rem;
+  width: 60rem;
+
   object-fit: contain;
 }
 
@@ -181,6 +181,14 @@ li {
 }
 .feature__servic__title {
   font-weight: bold;
+}
+
+.page__intro {
+  margin-top: 4rem;
+}
+
+.subheading {
+  margin-top: 4rem;
 }
 /* Small view Only */
 @media screen and (max-width: 39.9375em) {
