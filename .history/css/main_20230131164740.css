@@ -182,11 +182,4 @@ button {
   flex-direction: row;
 }
 
-
-.main__image{
-width: 36rem;
-}
-
-img{
-  width: 10rem;
-}
+img{}
