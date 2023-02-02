@@ -1,3 +1,8 @@
+:root{
+  --blue: #1cc7ea;
+}
+
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -281,18 +286,21 @@ button {
   display: flex;
 }
 
-.sponsors {
+.sponsors{
   display: flex;
-  justify-content: space-around;
-  height: 10rem;
+flex-direction: row;
+gap: 2rem;
+}
+
+.sponsors>img {
+  width: 8rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 .sponsors__icon {
-  background-color: lightgray;
-}
-
-.social__link {
-  display: flex;
+  background-color: rgb(243, 243, 243);
 }
 
 .social__icon {
@@ -304,6 +312,97 @@ button {
   flex-direction: row;
 }
 
-img {
-  width: 10rem;
+.sample__images {
+  width: 100%;
 }
+
+
+.fa-lightbulb-o{
+  color: white;
+  background-color: green;
+  width: 8rem;
+  height: 8rem;
+}
+
+.image__details{
+background-color: var(--blue);
+}
+
+.social__link {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.fa{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook{
+  background-color: blue;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.fa-google-plus{
+  background-color: red;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.fa-twitter-square{
+  background-color: var(--blue);
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+
+
+.fa-instagram{
+  background-color: magenta;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.fa-wifi{
+  background-color: orange;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+
+.fa-flask{
+  background-color: red;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fa-leaf{
+  background-color: blue;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fa-laptop{
+  background-color: pink;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fa-users{
+  background-color: brown;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.fa-twitter{
+background-color: gray;  
+width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+
