@@ -1,10 +1,14 @@
 :root {
+  --background-white: #ffffff;
   --blue: #1cc7ea;
   --green: #25c389;
   --yellow: #ffb901;
   --red: #de6262;
   --light-blue: #1691bd;
   --dark-blue: #166ba2;
+  --navy: #0d181f;
+  --purple: #750aa6;
+  --grey: #dfdfdf;
 }
 
 ::-moz-selection {
@@ -66,10 +70,15 @@ textarea {
 div,
 main,
 section,
-header,
-footer {
-  outline: 1px solid #ccc;
+header
+ {
   min-height: 1rem;
+  border: 1px solid white;
+}
+
+footer{
+  background-color: var(--navy);
+  color: var(--background-white);
 }
 
 /* Typography */
@@ -79,6 +88,7 @@ h3,
 h4,
 h5,
 h6,
+div,
 header {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -97,6 +107,7 @@ p {
 .header {
   text-align: center;
 }
+
 
 .subheading {
   text-align: center;
@@ -305,8 +316,9 @@ li {
 }
 
 button {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
 }
 
 .row_two {
@@ -315,8 +327,7 @@ button {
 }
 
 .col_two {
-  background-color: pink;
-  height: 6rem;
+  height: 4rem;
 }
 
 .examples {
@@ -324,13 +335,12 @@ button {
   justify-content: space-around;
 }
 
-.sample__menu {
-  display: flex;
-  justify-content: space-between;
-}
-
 .web__solution {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--grey);
+  border-top: none;
 }
 
 .web__author {
@@ -343,12 +353,16 @@ button {
 
 .tab__information {
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .sponsors {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  justify-content: center;
+  gap: 3.5rem;
+  margin: 3rem;
 }
 
 .sponsors > img {
@@ -366,21 +380,17 @@ button {
   margin: 0.5rem;
 }
 
-.footer__extras {
-  display: flex;
-  flex-direction: row;
-}
-
 .sample__images {
   width: 100%;
 }
 
 .fa-lightbulb-o {
   color: white;
-  background-color: green;
-  width: 8rem;
-  height: 8rem;
-}
+  background-color: var(--green);
+  width: 40rem;
+  height: 7rem;
+  margin-left: 1rem;
+  }
 
 .image__details {
   background-color: var(--blue);
@@ -435,26 +445,127 @@ button {
 }
 
 .fa-leaf {
-  background-color: blue;
+  background-color: var(--green);
   width: 3rem;
   height: 3rem;
 }
 
 .fa-laptop {
-  background-color: pink;
+  background-color: var(--yellow);
   width: 3rem;
   height: 3rem;
 }
 
 .fa-users {
-  background-color: brown;
+  background-color: var(--purple);
   width: 3rem;
   height: 3rem;
 }
 
 .fa-twitter {
   background-color: gray;
-  width: 5rem;
+  width: 12rem;
   height: 5rem;
   border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.accordion__menu__one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+}
+
+.accordion__menu__one>button{
+  background-color: var(--light-blue);
+}
+
+.accordion__menu__two>button{
+  background-color: var(--background-white);
+border: 1px solid var(--grey);
+}
+
+.menu__button{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.accordion__menu__two{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  border: 1px solid var(--grey);
+}
+
+.things_of_above{
+  width: 26rem;
+}
+
+.tab__bar{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--grey);
+  height: 3rem;
+}
+
+.tab__icons{
+margin-top: 2rem;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.bottom-left>p{
+  display: flex;
+}
+
+.highlighted__sample__images{
+width: 100%;
+}
+
+.footer__extras{
+  display: flex;
+  align-items: center;
+  }
+
+  .flickr__photos{
+display: flex;
+}
+
+.flickr__photos>img{
+  justify-content: center;
+padding: 1rem;  
+}
+
+.icons{
+  display: flex;
+}
+
+.enter__email{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--red);
+  height: 4rem;
+}
+
+.fa-paper-plane{
+  background-color: var(--yellow);
+  width: 4rem;
+  height: 4rem;
 }
