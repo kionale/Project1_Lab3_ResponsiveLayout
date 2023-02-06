@@ -305,7 +305,8 @@ li {
     grid-template-columns: repeat(3, 1fr);
   }
   .l-col-4 {
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .l-row-span {
     grid-column-start: 1;
@@ -347,6 +348,10 @@ button {
 
 .recent__tweets {
   display: flex;
+}
+
+.fa.fa-twitter {
+  scale: 0.5;
 }
 
 .tab__information {
@@ -538,6 +543,7 @@ button {
   margin: 0 auto;
   background-color: var(--footer-blue);
   color: white;
+  font-size: 0.7rem;
 }
 
 .footer__content {
@@ -566,15 +572,14 @@ button {
   border: none;
 }
 
-.text__underline.yellow{
+.text__underline.yellow {
   background-color: var(--yellow);
   border: none;
 }
 
-.text__underline.blue{
+.text__underline.blue {
   background-color: var(--blue);
   border: none;
-
 }
 
 .social_link {
@@ -589,17 +594,18 @@ button {
   justify-content: center;
   padding: 0.25rem;
   object-fit: cover;
-  width: 5rem;
+  width: 4rem;
 }
 
-span{
-  color:var(--blue);
+span {
+  color: var(--blue);
   font-weight: bold;
 }
 .icons {
   display: flex;
-
-  
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
 }
 
 .enter__email {
