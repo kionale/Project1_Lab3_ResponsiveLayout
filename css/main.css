@@ -468,10 +468,9 @@ button {
 
 .fa-twitter {
   background-color: gray;
-  width: 12rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  margin: 0.5rem;
 }
 
 .accordion__menu__one {
@@ -615,10 +614,13 @@ span {
   justify-content: space-between;
   background-color: var(--red);
   height: 4rem;
+  
 }
 
 .fa-paper-plane {
   background-color: var(--yellow);
   width: 4rem;
   height: 4rem;
+  margin-bottom: 0.3rem;
+  
 }
